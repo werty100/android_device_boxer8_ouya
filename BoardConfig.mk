@@ -73,7 +73,7 @@ TARGET_KERNEL_SOURCE := kernel/boxer8/ouya
 TARGET_KERNEL_CONFIG := cyanogenmod_ouya_defconfig 
 KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.7/bin/"
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/boxer8/ouya/releasetools/ouya_ota_from_target_files
-
+BOARD_KERNEL_CMDLINE := androidboot.selinux=disabled
 # recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
